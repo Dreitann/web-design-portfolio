@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 7</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f2f2f2;
+            justify-content: center;
+            align-items: center;
+        }
+        form {
+            width: 40%;
+            max-width: 600px;
+            margin: 0 auto;
+            border: 3px solid #8b8888;
+            background-color: #e0e0e0; 
+            padding: 15px; 
+            color: #333;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        input {
+            width: 90%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        select {
+            width: 92%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            width: 92%;
+            padding: 5px;
+            margin-bottom: 10px;
+            background-color: #ad3aff;
+            color: #fff;
+            border: 1px solid #53009b;
+            border-radius: 5px;
+        }
+        output {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            display: block;
+            margin-top: 15px; 
+            font-weight: bold;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 30px; 
+        }
+        .owl-carousel .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .slide-content {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Practical Work 7 by Artsiom Nestarovich</h1>
+    <h2>Calculator</h2>
+    <script>
+        function calculate(num1, operator, num2) {
+            switch(operator) {
+                case '+':
+                    return num1 + num2;
+                case '-':
+                    return num1 - num2;
+                case '*':
+                    return num1 * num2;
+                case '/':
+                    if(num2 != 0) {
+                        return num1 / num2;
+                    } else {
+                        return "Error: Division by zero is not allowed.";
+                    }
+                default:
+                    return "Error: Invalid operator.";
+            }
+        }
+        
+        function performCalculation() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var operator = document.getElementById('operator').value;
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var result = calculate(num1, operator, num2);
+            document.getElementById('result').textContent = result;
+        }
+    </script>
+    <form>
+        <label for="num1">First number:</label>
+        <input type="number" id="num1">
+
+        <label for="operator">Operator:</label>
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+
+        <label for="num2">Second number:</label>
+        <input type="number" id="num2">
+
+        <button type="button" onclick="performCalculation()">Calculate</button>
+        <button type="reset">Reset</button>
+
+        <label for="result">Result:</label>
+        <output id="result"></output>
+    </form>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                items: 1 
+            });
+        });
+    </script>
+    <h2>Carousel</h2>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <div class="slide-content">
+                <h3>Explain "repaint" and "reflow" of the webpage:</h3>
+                <p>Repaint and Reflow: When a web page loads or is updated, the browser goes through a process called reflow and repaint. Reflow involves calculating the layout of elements on the page, while repaint involves drawing those elements on the screen. Reflow is more resource-intensive as it involves recalculating the size and position of elements based on changes in the DOM (Document Object Model), while repaint involves updating the visual representation of those elements. Both processes are essential for rendering web pages accurately, but excessive reflows or repaints can impact performance.</p>
+            </div>
+        </div>
+        
+        <div class="item">
+            <div class="slide-content">
+                <h3>How does JavaScript on the webpage affect the page load speed and performance?</h3>
+                <p>Simplifying JavaScript plays a vital role in improving page load speed and performance. JavaScript code can affect page load speed by blocking the main thread, generating unnecessary HTTP requests, and consuming CPU resources. To optimize performance, it's crucial to implement efficient rendering strategies, streamline webpage layout, and minimize JavaScript complexity.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slide-content">
+                <h3>What is "minification" of the script? Why is it useful to minify your scripts?</h3>
+                <p>Minification of scripts involves condensing JavaScript code by removing unnecessary characters like spaces and comments while preserving functionality. This process is beneficial because it reduces file size, making scripts quicker to download, easier to compress, and harder for hackers to exploit. Developers typically use tools like UglifyJS or integrate minification into their build processes with tools like Webpack to streamline this optimization step, enhancing webpage performance and security.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slide-content">
+                <h3>What is a JS Web Worker and when do we need it?</h3>
+                <p>A JavaScript Web Worker operates independently in the background of the browser's main thread. These workers prove invaluable for executing complex computations without impeding the main thread's functionality. They excel in scenarios such as background processing, handling lengthy tasks, and leveraging multi-core processors for enhanced efficiency. Developers can initialize a web worker by creating a new worker object and providing it with a JavaScript file containing the required code. This worker object facilitates communication between the main thread and the worker. Ultimately, web workers enable more efficient and scalable processing of intricate tasks, making them indispensable for developers seeking to optimize webpage performance.</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="slide-content">
+                <h3>Sources:</h3>
+                <ul>
+                    <li>https://www.browserstack.com/guide/how-to-reduce-page-load-time-in-javascript</li>
+                    <li>https://www.wallarm.com/what/what-is-minification-and-why-is-it</li>
+                    <li>https://developer.mozilla.org/en-US/docs/Glossary/Page_load_time</li>
+                    <li>https://benestudio.co/web-workers-in-javascript-and-when-to-use-them/</li>
+                    <li>https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</body>
+</html>

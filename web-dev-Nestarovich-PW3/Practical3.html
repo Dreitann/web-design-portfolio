@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report PW3 Nestarovich</title>
+  <style>
+   
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+    }
+    p {
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="border: 5px solid red; padding: 15px; text-align: center;">Report PW3 Nestarovich</h1>
+  <div style="border: 2px dashed blue; padding: 10px;">
+    
+  <article>
+    <h2>Accessing Developer Tools</h2>
+    <p>Understanding how to access the developer console is important for web developers, so we have to understand how to work with major browsers:</p>
+    <ul>
+      <li><strong>Mozilla Firefox:</strong> Right-click anywhere on the webpage and select "Inspect Element" or press `Ctrl + Shift + I` (Windows/Linux) or `Command + Option + I` (Mac).</li>
+      <li><strong>As i'm working on mac, i use this method: Safari:</strong> Go to the "Safari" menu at the top and select "Preferences". Click on the "Advanced" tab and check the box next to "Show Develop menu in menu bar". Now, you can access the console by navigating to the "Develop" menu and selecting "Show Web Inspector" or pressing `Command + Option + E`.</li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>Internal vs. Absolute Links</h2>
+    <p>When linking to other pages on your website, using <strong>relative links</strong> is generally preferable. These links are based on the current page's location and offer several advantages:</p>
+    <ul>
+      <li><strong>Maintainability:</strong> If your website structure changes, you only need to update the link on the current page, not every page that links to it.</li>
+      <li><strong>Portability:</strong> You can easily move your entire website to a new domain without breaking links.</li>
+    </ul>
+    <p>However, there are specific use cases for <strong>absolute links</strong>:</p>
+    <ul>
+      <li>Linking to external websites completely outside your domain.</li>
+      <li>Creating downloadable files (e.g., PDFs) with a specific path on your server.</li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>Image Formats for Web Development</h2>
+    <p>Choosing the right image format plays a significant role in web development. Here's a breakdown of common formats:</p>
+    <ul>
+      <li><strong>JPG (JPEG):</strong> Excellent for photographs with a wide range of colors due to its lossy compression. However, repeated saving can degrade image quality.</li>
+      <li><strong>GIF (Graphics Interchange Format):</strong> Ideal for simple graphics and animations with a limited color palette (256 colors). Supports transparency.</li>
+      <li><strong>PNG (Portable Network Graphic):</strong> Provides lossless compression, making it suitable for graphics with sharp details and text. Also supports transparency.</li>
+      <li><strong>WEBP:</strong> A relatively new format offering superior compression compared to JPG while maintaining good quality. However, browser support might not be universal yet.</li>
+      <li><strong>SVG (Scalable Vector Graphics):</strong> Not technically an image format, but a vector graphic format. Perfect for logos, icons, and illustrations as it scales infinitely without losing quality.</li>
+    </ul>
+  </article>
+  <img src="34.png" width="1000" height="500" alt="34.png">
+</div>
+
+
+  <p style="border-bottom: 1px dotted green;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <span style="border: 1px inset orange; padding: 5px;">Inline element</span>
+
+  <p style="background-color: #ffcc99; padding: 15px;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam, odio eu pellentesque vehicula... (using hex code)
+  </p>
+  <p style="background-color: lightblue; padding: 15px;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam, odio eu pellentesque vehicula... (using color name)
+  </p>
+  <p style="background-color: rgb(131, 196, 103); padding: 15px;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam, odio eu pellentesque vehicula... (using rgba function)
+  </p>
+  <p style="background-image: linear-gradient(to right, #f0f8ff, #e0e0e0); padding: 15px;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam, odio eu pellentesque vehicula... (linear gradient)
+  </p>
+  <p style="background-image: repeating-linear-gradient(to right, #eee, #ddd 10px); padding: 15px;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam, odio eu pellentesque vehicula... (repeating gradient)
+  </p>
+  <p style="background-image: url('sam.png'); background-size: cover; padding: 15px;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam, odio eu pellentesque vehicula... (background image)
+  </p>
+  <p style="background-image: url('cat.png'), url('image2.png'); background-blend-mode: multiply; opacity: 0.8; padding: 15px;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam, odio eu pellentesque vehicula... (multiple semi-transparent images)
+  </p>
+
+</body> 
+</html>

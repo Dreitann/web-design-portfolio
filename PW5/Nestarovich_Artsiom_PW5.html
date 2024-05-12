@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 5: CSS Concepts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        article {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+            overflow: hidden;
+        }
+
+        article h1, article h2, article h3, article h4, article h5 {
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        img {
+            max-width: 400px;
+            display: block;
+            margin: 0;
+            float: right;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            color: white;
+        }
+        a:visited {
+            color: purple;
+        }
+        a:hover {
+            color: red;
+        }
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#box-model">Box Model</a></li>
+                <li><a href="#clearfix-hack">Clearfix Hack</a></li>
+                <li><a href="#margin-collapse">Margin Collapse</a></li>
+                <li><a href="#holy-grail-problem">Holy Grail Problem</a></li>
+                <li><a href="#modern-solutions">Modern Solutions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="box-model">
+            <h1>Box Model in CSS</h1>
+            <p>The box model in CSS is a fundamental concept that describes how elements on a web page are structured in terms of width, height, padding, borders, and margins.</p>
+            <p>The <strong>box-sizing</strong> property in CSS allows you to specify how the total width and height of an element are calculated. The default value is <code>content-box</code>, which includes only the content width and height. Setting it to <code>border-box</code> includes padding and border widths in the total width and height of the element.</p>
+            <div>
+                <img src="1.png" alt="Box Model">
+                <img src="2.png" alt="Box Model">
+            </div>
+        </article>
+
+        <article id="clearfix-hack">
+            <h2>Clearfix Hack</h2>
+            <p>The clearfix hack is a technique used to fix issues related to floated elements inside a container. When an element is floated, it is taken out of the normal document flow, which can cause its parent container to collapse.</p>
+            <p>To apply the clearfix hack, you can use a CSS class or pseudo-element to clear the floats. This ensures that the parent container expands to contain the floated elements properly.</p>
+            <img src="3.png" alt="Clearfix Hack">
+        </article>
+
+        <article id="margin-collapse">
+            <h2>Margin Collapse</h2>
+            <p>Margin collapse is a phenomenon in CSS where the margins of adjacent elements collapse into a single margin. This can happen in several situations, such as when two vertical margins touch each other.</p>
+            <p>The <code>margin: auto;</code> property is commonly used to horizontally center block-level elements within their parent containers. Negative margin values are often used for creating overlapping effects or adjusting the positioning of elements.</p>
+            <div>
+                <img src="4.png" alt="Margin Collapse">
+                <img src="5.png" alt="Margin Collapse">
+            </div>
+        </article>
+
+        <article id="holy-grail-problem">
+            <h2>Holy Grail Layout Problem</h2>
+            <p>The Holy Grail layout refers to a common web design pattern that consists of a header, footer, and three columns of content, with the center column being the main content area.</p>
+            <p>One problem with achieving the Holy Grail layout is creating a fluid layout that adjusts to different screen sizes while maintaining equal column heights.</p>
+            <div>
+                <img src="6.png" alt="Holy Grail Problem">
+                <img src="7.png" alt="Holy Grail Problem">
+            </div>
+        </article>
+        
+        <article id="modern-solutions">
+            <h2>Modern Solutions for Holy Grail Layout</h2>
+            <p>Modern solutions for the Holy Grail layout often involve using CSS Flexbox or CSS Grid layout techniques. These provide more flexibility and control over the positioning and alignment of elements, making it easier to create complex layouts like the Holy Grail.</p>
+            <p>Flexbox allows you to easily create flexible layouts where elements within a container can be dynamically arranged and resized based on available space. CSS Grid provides a two-dimensional grid system, making it ideal for creating complex, grid-based layouts with precise control over rows and columns.</p>
+            <img src="modern-solutions.jpg" alt="Modern Solutions">
+        </article>
+    </main>
+    <footer>
+        <p>Created by: Artsiom Nestarovich</p>
+        <p>Course: 1st</p>
+        <p>Date: 30.04.2024</p>
+        <p>Day: Tuesday</p>
+        <p>Place: Minsk</p>
+        <ul>
+            <li><a href="https://www.sitepoint.com/set-css-margins-padding-cool-layout-tricks/">Link 1</a></li>
+            <li><a href="https://www.w3schools.com/css/css3_shadows.asp">Link 2</a></li>
+            <li><a href="https://www.w3schools.com/css/css_float_clear.asp">Link 3</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

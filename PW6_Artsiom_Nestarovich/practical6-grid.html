@@ -1,0 +1,181 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title>Nestarovich_Artsiom_PW6_Grid</title> 
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<style> 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+.logo { 
+    float: left; 
+    margin-left: 20px; 
+    color: #4a2923;
+    font-size: 80px; 
+} 
+
+header { 
+    background-color: white; 
+    padding-bottom: 120px;  
+    padding-top: 10px; 
+} 
+
+nav { 
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 10px;
+    font-size: 18px;
+}        
+
+nav a { 
+    background-color: #4a2923;
+    color: white; 
+    padding: 10px 30px; 
+    text-decoration: none; 
+} 
+
+.img { 
+    margin: 10px 20px; 
+    float: left; 
+    width: 40%;
+    min-width: 400px;
+}  
+
+.right { 
+    font-size: 18px; 
+    float: left; 
+    margin-right: 10px;
+    color: #4a2923;
+}
+
+.container { 
+    gap: 5px 5px; 
+    float: right; 
+    display: flex; 
+    flex-wrap: wrap; 
+    padding: 10px 20px; 
+}
+
+.left {
+    padding-left: 10px;
+    font-size: 25px;
+    color: rgb(36, 37, 37);
+}
+
+@media only screen and (max-width: 800px) {
+    .right {
+        background: #4a2923;
+        font-size: 16px;
+    }
+    nav {
+        font-size: 17px;
+    }
+    .left {
+        font-size: 20px;
+    }
+    .hide {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .right {
+        background: #4a2923;
+        font-size: 14px;
+    }
+    nav {
+        font-size: 15px;
+    }
+    .left {
+        font-size: 18px;
+    }
+    .hide {
+        display: none;
+    }
+}  
+
+.news {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news-preview {
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Add a border */
+    box-sizing: border-box; /* Ensure border is included in width calculation */
+}
+
+.news-thumbnail {
+    width: 100%;
+    height: auto;
+}
+</style> 
+</head> 
+<body> 
+
+<header> 
+    <div class="logo">Simulatte</div>    
+    <nav class="container"> 
+        <a href="#1">Home</a> 
+        <a href="#2">Services</a> 
+        <a href="#3">News</a> 
+        <a href="#4">About</a> 
+        <a href="#5">Contact</a> 
+        <a href="#6">Block Regions</a> 
+        <a href="#7">Typography</a> 
+    </nav> 
+</header> 
+
+<section id="1"> 
+    <div class="right">  
+        <img class="img" src="11.png" alt="picture 1"> 
+        <h2>*Simulatte - its an easter egg to Matrix</h2> 
+        <p>TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p> 
+    </div> 
+</section> 
+
+<section id="2">
+    <h2 class="left">News</h2>
+</section> 
+
+<section class="news">
+    <article class="news-preview">
+        <img src="22.png" alt="News Thumbnail 1" class="news-thumbnail">
+        <h3>News 1</h3>
+        <p class="news-meta"> January 1, 2022 </p>
+        <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+        <a href="#" class="read-more">Read More</a>
+    </article>
+
+    <article class="news-preview">
+        <img src="33.png" alt="News Thumbnail 2" class="news-thumbnail">
+        <h3>News 2</h3>
+        <p class="news-meta"> January 2, 2023 </p>
+        <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        <a href="#" class="read-more">Read More</a>
+    </article>
+
+    <article class="news-preview">
+        <img src="44.png" alt="News Thumbnail 3" class="news-thumbnail">
+        <h3>News 3</h3>
+        <p class="news-meta"> January 3, 2024 </p>
+        <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+        <a href="#" class="read-more">Read More</a>
+    </article>
+
+    <article class="news-preview">
+        <img src="55.png" alt="News Thumbnail 4" class="news-thumbnail">
+        <h3>News 4</h3>
+        <p class="news-meta"> January 4, 2024 </p>
+        <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+        <a href="#" class="read-more">Read More</a>
+    </article>
+</section>
+
+</body> 
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Nestarovich_PW6</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * {
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: azure;
+  
+}
+header {
+    background-color:	#4a2923	;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+nav {
+  float: right;
+  width: 15%;
+  background: #200808;
+  padding-right: 15px;
+  height: 1300px;
+  color: rgb(255, 255, 255);
+   
+}
+article {
+  float: left;
+  
+  width: 85%;
+  height: 1300px;
+  background-color:	#4a2923	;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 700px) {
+   
+    article, nav {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hide {
+            width: 70%;
+            padding: 1px;  
+        }
+        .text-block {
+    font-size: 14px; 
+}
+
+}
+
+
+@media only screen and (max-width: 390px) {
+    
+    nav{
+      font-size: 15px;
+    }
+    
+    .hide {
+          display: none;
+        }
+        .text-block {
+    font-size: 12px; 
+}    
+}  
+
+
+ul {list-style: none;}
+        li::before {
+            content: "⁂"; 
+            padding-right: 5px; 
+            color: rgb(228, 228, 228); 
+        }
+.img { 
+    height: 400px;
+    width: 100%;
+    padding: 5px;
+}  
+.news {
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .news-preview {
+            width: 90%;
+            padding: 1px;  
+        }
+        
+        .news-thumbnail {
+            width: 390px;
+            height: 300px;
+            
+            float: left;
+            padding-right: 20px;
+        }
+        .news-meta{
+            color: #4a2923
+            font-size: 15px;
+        }
+        .read-more{
+            width: 100%;
+            background-color: #4a2923
+            color:white;
+            padding: 2px;
+            font-size: 17px;
+        }
+.read{
+    background-color: #4a2923
+            color:white;
+            padding: 2px;
+            font-size: 17px; 
+            float: right;  
+}
+h3{
+    color:#4a2923
+}
+h4{
+    color:#4a2923
+}
+hr{
+    color:#ffc0b5
+}
+.container {
+    position: relative;   
+}
+
+.text-block {
+    position:absolute;
+    bottom: 10px;
+    width:100%;
+    background-color: rgba(245, 245, 245, 0.8);
+    color: rgb(9, 0, 0);
+    padding: 1px 10px;
+    text-align: left;
+    
+}
+a {
+            color: white;
+        }
+        a:visited {
+            color: purple;
+        }
+        a:hover {
+            color: red;
+        }
+        a:active {
+            color: green;
+        }
+</style>
+</head>
+<body>
+
+<header class="container">
+    <img class="img"   src="11.png" alt="picture 1">
+    <div class="text-block">
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunts
+            <a href="#" class="read">Read More</a>
+        </p>
+        
+    </div>
+
+</header>
+
+  
+  
+  <article class="news">
+
+    <section class="news-preview">
+        <h3 id="1">News 1</h3>
+        <p class="news-meta"> January 1, 2022 </p>
+        <img  class="news-thumbnail" src="22.png" alt="News Thumbnail 1" >
+        
+        <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>    
+    <a href="#" class="read-more">Read More</a>
+</section>
+    <section class="news-preview">
+    <hr>
+        <h3 id="2">News 2</h3>
+        <p class="news-meta"> January 2, 2023 </p>
+        <img src="33.png" alt="News Thumbnail 2" class="news-thumbnail">
+        
+        <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+    <a href="#" class="read-more">Read More</a>
+</section>
+
+    <section class="news-preview">
+        <hr>
+        <h3 id="3">News 3</h3>
+        <p class="news-meta"> January 3, 2024 </p>
+        <img src="44.png" alt="News Thumbnail 3" class="news-thumbnail">
+        
+        <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+    <a href="#" class="read-more">Read More</a>
+</section>
+    
+</article>
+
+
+<nav>
+    <h3><center>Navigation</center></h3>
+    <ul>
+      <li><a href="#1">Lorem</a></li>
+      <li><a href="#2">Lorem</a></li>
+      <li><a href="#3">Lorem</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
+
